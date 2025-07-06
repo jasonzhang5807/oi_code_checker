@@ -11,8 +11,8 @@ if [ $# -eq 3]; then
         echo "Output does not match."
     fi
 else if [ $# -eq 2 ]; then
-    $2 < /tmp/input.txt > /tmp/user_output.txt
-    $3 < /tmp/input.txt > /tmp/correct_output.txt
+    $2 < /tmp/data.txt > /tmp/user_output.txt
+    $3 < /tmp/data.txt > /tmp/correct_output.txt
     diff user_output.txt correct_output.txt
     if [ $? -eq 0 ]; then
         echo "Output matches!"
