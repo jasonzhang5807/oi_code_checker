@@ -10,7 +10,7 @@ if [ $# -eq 3]; then
     else
         echo "Output does not match."
     fi
-else if [ $# -eq 2 ]; then
+elif [ $# -eq 2 ]; then
     $2 < /tmp/data.txt > /tmp/user_output.txt
     $3 < /tmp/data.txt > /tmp/correct_output.txt
     diff user_output.txt correct_output.txt
